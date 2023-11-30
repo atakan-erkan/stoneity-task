@@ -47,11 +47,11 @@ export const Dropdown = ({ isOpen }) => {
     <div className={DropdownCSS.dropdown}>
       {isOpen && (
         <div className={DropdownCSS.dropdownMenu}>
-          {dropdownList.map((items, i) => (
+          {dropdownList.map((lists, i) => (
             <div className={DropdownCSS.dropdownList}>
-              <div className={DropdownCSS.dropdownTitle}>{items.title}</div>
+              <div className={DropdownCSS.dropdownTitle}>{lists.title}</div>
               <div className={DropdownCSS.dropdownListItems}>
-                {items.items.map((item) => (
+                {lists.items.map((item) => (
                   <div className={DropdownCSS.dropdownListItem}>
                     <a href="/#">{item}</a>
                   </div>
